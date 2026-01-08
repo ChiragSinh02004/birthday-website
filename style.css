@@ -62,7 +62,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 14px;
-  padding: 14px;
+  padding: 20px;
 }
 
 .insta-item {
@@ -70,7 +70,7 @@ body {
   border-radius: 16px;
   background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
   background-size: 400% 400%;
-  animation: rgb 6s linear infinite;
+  animation: rgb 10s linear infinite;
 }
 
 @keyframes rgb {
@@ -145,4 +145,64 @@ body {
 /* Responsive */
 @media (min-width:768px){
   .insta-grid{grid-template-columns:repeat(3,1fr)}
+}
+
+/* ================= CAPTION OVER IMAGE OVERLAY ================= */
+
+/* Make insta-item a positioning container */
+.insta-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image smooth zoom */
+.insta-item img {
+  transition: transform 0.6s ease;
+}
+
+/* Caption Overlay */
+.caption {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85),
+    rgba(0, 0, 0, 0.15)
+  );
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(25px);
+  transition: all 0.5s ease;
+}
+
+/* Hover Effects */
+.insta-item:hover img {
+  transform: scale(1.15);
+}
+
+.insta-item:hover .caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Glow effect for birthday vibe */
+.insta-item:hover {
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.6);
+}
+
+/* Mobile support (no hover) */
+@media (max-width: 768px) {
+  .caption {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
