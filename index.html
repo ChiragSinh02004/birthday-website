@@ -3,134 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Birthday Celebration 🎉</title>
+<title>Birthday Surprise 🎂</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header id="hero">
-  <h1>🎉 Happy Birthday 🎂</h1>
-  <p>A story made with love, just for you ✨</p>
-</header>
-
-<!-- Story Progress Dots -->
-<div class="story-progress" id="storyProgress"></div>
-
-<!-- Gallery -->
-<section class="gallery" id="gallery">
-  <!-- 15 Photos -->
-  <!-- Replace src with your real images -->
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=1"><div class="caption">Memory 1 💫</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=2"><div class="caption">Memory 2 ✨</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=3"><div class="caption">Memory 3 💖</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=4"><div class="caption">Memory 4 🌟</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=5"><div class="caption">Memory 5 😊</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=6"><div class="caption">Memory 6 🎈</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=7"><div class="caption">Memory 7 💎</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=8"><div class="caption">Memory 8 🌈</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=9"><div class="caption">Memory 9 😄</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=10"><div class="caption">Memory 10 ✨</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=11"><div class="caption">Memory 11 💕</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=12"><div class="caption">Memory 12 🌟</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=13"><div class="caption">Memory 13 😍</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=14"><div class="caption">Memory 14 🎊</div></div>
-  <div class="photo"><img class="story-img" loading="lazy" src="https://via.placeholder.com/300x400?text=15"><div class="caption">Memory 15 🎉</div></div>
+<!-- HERO -->
+<section id="hero">
+  <h1 id="typing"></h1>
+  <button id="startBtn">Start the Journey ✨</button>
 </section>
 
-<!-- Final Screen -->
-<section class="final-screen">
-  <div class="final-card" id="finalCard">
-    <h2>🎂 Happy Birthday 🎉</h2>
-    <p>May your life glow brighter than these memories ✨</p>
-    <button onclick="launchConfetti(180)">Celebrate 🎊</button>
-    <div class="secret-message" id="secretMessage">💖 You found the secret — this was made with love 💖</div>
+<!-- THOUGHT OVERLAY -->
+<section class="thought-section">
+  <div class="thought">
+    <span>“Some people turn moments into memories,</span>
+    <span>and memories into forever.”</span>
   </div>
 </section>
 
-<audio id="bgMusic" loop>
-  <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+<!-- GALLERY -->
+<section id="gallery" class="insta-grid">
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+  <div class="insta-item"><img src="https://github.com/ChiragSinh02004/birthday-website/blob/main/Itachi.jpg?raw=true"><div class="caption">Best smile 💖</div></div>
+</section>
+
+<!-- FINAL -->
+<section class="final-screen">
+  <div class="final-card" id="finalCard">
+    <h2>🎂 Happy Birthday 🎉</h2>
+    <p>You’re not just growing older,<br>you’re growing more special 💖</p>
+    <button id="celebrateBtn">Celebrate 🎆</button>
+    <p class="hint">💡 Tip: Tap & hold this card</p>
+  </div>
+</section>
+
+<!-- HIDDEN SURPRISE -->
+<div class="hidden-surprise" id="surprise">
+  <h2>💝 A Quiet Truth</h2>
+  <p>
+    Some gifts aren’t wrapped.<br>
+    They’re built slowly, carefully,<br>
+    with time, effort, and heart.<br><br>
+    This page is one of them.
+  </p>
+</div>
+
+<!-- Sound -->
+<audio id="fireSound">
+  <source src="firecracker.mp3" type="audio/mpeg">
 </audio>
 
 <script>
-/* ================= GPU OPTIMIZED STORY ENGINE ================= */
+/* Typing Effect */
+const text = "Happy Birthday 🎂";
+let i = 0;
+const typing = document.getElementById("typing");
 
-const gallery = document.getElementById('gallery');
-const photos = document.querySelectorAll('.photo');
-const imgs = document.querySelectorAll('.story-img');
-const music = document.getElementById('bgMusic');
-const secret = document.getElementById('secretMessage');
-const finalCard = document.getElementById('finalCard');
-const progress = document.getElementById('storyProgress');
-
-let index = 0;
-
-/* Progress dots */
-photos.forEach((_, i) => {
-  const dot = document.createElement('span');
-  if (i === 0) dot.classList.add('active');
-  progress.appendChild(dot);
-});
-const dots = progress.querySelectorAll('span');
-
-/* GPU image loading */
-imgs.forEach(img => {
-  img.style.willChange = 'transform, filter';
-  img.complete ? img.classList.add('loaded') : img.onload = () => img.classList.add('loaded');
-});
-
-/* Auto play */
-function playStory() {
-  if (index < photos.length) {
-    photos[index].scrollIntoView({ behavior: 'smooth', inline: 'center' });
-    dots.forEach(d => d.classList.remove('active'));
-    dots[index]?.classList.add('active');
-    index++;
-    setTimeout(playStory, 3000);
-  } else {
-    finale();
+(function type() {
+  if (i < text.length) {
+    typing.textContent += text.charAt(i++);
+    setTimeout(type, 120);
   }
-}
-setTimeout(playStory, 1200);
+})();
 
-/* Mobile swipe */
-let startX = 0;
-gallery.addEventListener('touchstart', e => startX = e.touches[0].clientX);
-gallery.addEventListener('touchend', e => {
-  if (startX - e.changedTouches[0].clientX > 50) playStory();
-});
-
-/* Music */
-window.onload = () => {
-  music.volume = 0.2;
-  music.play().catch(()=>{});
+/* Start Journey */
+document.getElementById("startBtn").onclick = () => {
+  document.getElementById("gallery")
+    .scrollIntoView({ behavior: "smooth" });
 };
 
-/* Finale */
-function finale() {
-  let v = music.volume;
-  const fade = setInterval(() => {
-    if (v < 1) music.volume = (v += 0.02);
-    else clearInterval(fade);
-  }, 200);
-  launchConfetti(120);
-}
+/* Firecrackers */
+const fireSound = document.getElementById("fireSound");
 
-/* Confetti (GPU friendly) */
-function launchConfetti(n) {
-  for (let i = 0; i < n; i++) {
-    const c = document.createElement('div');
-    c.className = 'confetti';
-    c.style.left = Math.random() * 100 + 'vw';
-    document.body.appendChild(c);
-    setTimeout(() => c.remove(), 6000);
+function firecracker(x, y) {
+  for (let i = 0; i < 60; i++) {
+    const s = document.createElement("span");
+    s.className = "spark";
+    const a = Math.random() * Math.PI * 2;
+    const d = Math.random() * 200 + 50;
+    s.style.left = x + "px";
+    s.style.top = y + "px";
+    s.style.setProperty("--dx", Math.cos(a) * d + "px");
+    s.style.setProperty("--dy", Math.sin(a) * d + "px");
+    document.body.appendChild(s);
+    setTimeout(() => s.remove(), 1200);
   }
 }
 
-/* Easter Egg */
-finalCard.onclick = () => {
-  secret.classList.add('visible');
-  launchConfetti(60);
+document.getElementById("celebrateBtn").onclick = () => {
+  fireSound.play();
+  for (let i = 0; i < 6; i++) {
+    setTimeout(() => {
+      firecracker(
+        Math.random() * innerWidth,
+        Math.random() * innerHeight
+      );
+    }, i * 300);
+  }
 };
+
+/* Hidden Emotional Surprise (Long Press) */
+let pressTimer;
+const finalCard = document.getElementById("finalCard");
+const surprise = document.getElementById("surprise");
+
+finalCard.addEventListener("touchstart", reveal);
+finalCard.addEventListener("mousedown", reveal);
+
+function reveal() {
+  pressTimer = setTimeout(() => {
+    surprise.classList.add("show");
+  }, 1500);
+}
+
+["mouseup","mouseleave","touchend"].forEach(e =>
+  finalCard.addEventListener(e, () => clearTimeout(pressTimer))
+);
 </script>
 
 </body>
