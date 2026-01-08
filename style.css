@@ -144,5 +144,5 @@ body {
 
 /* Responsive */
 @media (min-width:768px){
-  .insta-grid{grid-template-columns:repeat(4,1fr)}
+  .insta-grid{grid-template-columns:repeat(3,1fr)}
 }
