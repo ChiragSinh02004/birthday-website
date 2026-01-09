@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;500&display=swap');
 
+/*---------------------------------------------*/
+/*---------------------------------------------*/
+
+
+
 * { box-sizing: border-box; }
 
 body {
@@ -22,6 +27,46 @@ body {
   font-family: 'Pacifico', cursive;
   font-size: 3.6rem;
 }
+/*==================================================================*/
+body, html {
+  margin: 0;
+  height: 100%;
+  background-color: #0f172a; /* Sleek dark background */
+  font-family: sans-serif;
+}
+
+.top-container {
+  display: flex;
+  justify-content: center; /* Centers button horizontally */
+  align-items: flex-start; /* Aligns content to the top */
+  width: 100%;
+  padding-top: 40px; /* Space from the very top of the screen */
+}
+
+.music-button {
+  background: linear-gradient(135deg, #00dbde 0%, #fc00ff 100%);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 8px 20px rgba(0, 219, 222, 0.3);
+  transition: all 0.3s ease;
+}
+
+.music-button:hover {
+  transform: translateY(2px); /* Slight dip on hover */
+  box-shadow: 0 4px 10px rgba(0, 219, 222, 0.5);
+  filter: brightness(1.1);
+}
+
+/*==================================================================*/
+
 
 #startBtn {
   margin-top: 2rem;
@@ -66,7 +111,7 @@ body {
 }
 
 .insta-item {
-  padding: 4px;
+  padding: 5px;
   border-radius: 16px;
   background: linear-gradient(45deg, red, orange, yellow, green, cyan, blue, violet);
   background-size: 400% 400%;
@@ -74,10 +119,11 @@ body {
 }
 
 @keyframes rgb {
-  to { background-position: 400% 0; }
+  to { background-position: 200% 0; }
 }
 
 .insta-item img {
+  height: 100%;
   width: 100%;
   border-radius: 12px;
 }
@@ -206,3 +252,6 @@ body {
     transform: translateY(0);
   }
 }
+
+/*===========================================================*/
+
