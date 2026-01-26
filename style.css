@@ -78,6 +78,35 @@ body, html {
   font-size: 1.1rem;
 }
 
+/*==================================================*/
+
+/* MUSIC BUTTON */
+.top-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.music-button {
+  background: linear-gradient(135deg, #00dbde, #fc00ff);
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 219, 222, 0.3);
+  transition: 0.3s ease;
+}
+
+.music-button:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 12px rgba(0, 219, 222, 0.5);
+}
+
+/*==================================================*/
+
 /* THOUGHT */
 .thought-section {
   padding: 6rem 1rem;
